@@ -2,6 +2,7 @@ import React from "react"
 import NavBar from "./navbar" 
 import facebook from "../images/facebook.svg"
 import twitter from "../images/twitter.svg"
+import "../style/main.scss"
 
 class Layout extends React.Component {
 
