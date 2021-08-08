@@ -2,6 +2,7 @@
 title: "Hey Wait it's Paper Route Frank"
 date: "2017-08-10"
 templateKey: blog-post
+featureImage: ../images/website-hosting.png
 ---
 
 It's Dolph

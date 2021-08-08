@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Helmet } from 'react-helmet'
-import Layout from '../components/layout.js'
+import Layout from '../components/layout2.js'
 
 
 
@@ -12,8 +12,11 @@ export default function BlogPost({ data }) {
       <div>
         <Layout>
         <Helmet title={post.frontmatter.title} defer={false} />
+        <article>
         <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div dangerouslySetInnerHTML={{ __html: post.html }} /> 
+        </article>
+        
         </Layout>
       </div>
   

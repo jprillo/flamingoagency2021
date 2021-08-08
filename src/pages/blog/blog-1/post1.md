@@ -2,6 +2,7 @@
 title: This is my first blog post
 date: 2021-05-10
 templateKey: blog-post
+featureImage: ../images/icon.png
 ---
 Gatsby starter first blog post 
 

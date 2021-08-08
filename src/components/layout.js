@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './navbar.js'
 import Footer from './footer.js'
+import "../style/main.scss"
 
 import {StaticQuery, graphql} from 'gatsby'
 

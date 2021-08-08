@@ -17,6 +17,7 @@ module.exports = {
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
+    'gatsby-plugin-dark-mode',
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
@@ -28,7 +29,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/jason.png",
       },
     },
     "gatsby-plugin-mdx",
@@ -38,8 +39,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: 'images',
+        path: './static/images/',
       },
       __key: "images",
     },
