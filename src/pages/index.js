@@ -3,7 +3,11 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout2"
 import CardOne from '../components/cardone'
 
-import free from "../images/jason.png"
+import develop from '../images/develop.png'
+import design from '../images/design.png'
+import launch from '../images/launch.png'
+import  meet from '../images/letsmeet.png'
+import  content from '../images/content.png'
 
 
 
@@ -14,7 +18,7 @@ import Seo from "../components/seo"
 
 
 const IndexPage = () => {
- 
+ const width = 400;
   return(
     <div>
       <Layout>
@@ -22,8 +26,8 @@ const IndexPage = () => {
            description="Give your business a leg up with a great website. A web design and development agency in Melbourne Florida."
           />
 <div className='hero-page'>
-  <div className="flex">
-    <div className="col-6">    
+  <div className="flex" >
+    <div className="col-6" >    
       <h1>Melbourne Florida<br/> Web Design</h1>     
       <h2>Give your business website a leg up with our expert design, development, seo, and branding.</h2> 
       <div className="btn-margin">
@@ -32,7 +36,7 @@ const IndexPage = () => {
     </div>
     <div className="col-6 hero-image">
    
-    <StaticImage src="../images/flamingo-illustration.png" alt="a flamingo with a tophat and bowtie"/>
+    <StaticImage width={width} src="../images/flamingo.png" alt="a flamingo with a tophat and bowtie"/>
     </div>
   </div>  
   </div>
@@ -54,7 +58,7 @@ const IndexPage = () => {
 Our garuntee is to tell you exactly what you can expect and deliver on time without any hidden fees or broken promises. </p>
 
  <div className="btn-margin">
-  <a className="primary-button" href="./contact/">Contact Us</a>
+  <a className="primary-button" href="./about/">About Us</a>
   </div>
   
   </div>
@@ -63,25 +67,38 @@ Our garuntee is to tell you exactly what you can expect and deliver on time with
 </section>
 
 <section className="card-container">
-  <h3>Our Web design & Development Process</h3>
-<div className="flex justify-center" style={{margin: "50px 0"}}>
+  <h3 style={{marginBottom: "5px"}}>Our Web design & Development Process</h3>
+<div className="flex justify-center" style={{margin: "50px 0", flexWrap: "wrap"}}>
 <CardOne
-title="Free Consultation"
-description="Find out what you need and propose a custom solution"
-image= {free}
-alt="free"
+title="Discovery Session"
+description="Learn how a new website can help your business and decide how to proceed."
+image= {meet}
+alt="web development"
+
 />
 <CardOne
-title="Free Consultation"
-description="Find out what you need and propose a custom solution"
-image= {free}
-alt="free"
+title="Write Content"
+description="Create custom images and content to let customers know what your business is all about."
+image= {content}
+alt="web development"
 />
 <CardOne
-title="Free Consultation"
-description="Find out what you need and propose a custom solution"
-image= {free}
-alt="free"
+title="Website Design"
+description="Beautiful design that helps create leads and directs customers to where you want them "
+image= {design}
+alt="web development"
+/>
+<CardOne
+title="Develop Website"
+description="Our goal is to create a dynamic UI/UX experience with search engines in mind. "
+image= {develop}
+alt="web development"
+/>
+<CardOne
+title="Launch"
+description="Your website is live, take over control and start building your business online. "
+image= {launch}
+alt="web development"
 />
 </div>
 
@@ -92,14 +109,15 @@ alt="free"
 
 <section className="two-panel light-back2">
 <Fade left>
-  <h3 className="text-center" >No one likes a slow website. Our websites are fast so less customers leave before loading</h3>
+  <h3 className="text-center" >No one like a slow website. Check out our speed.</h3>
   <div className="flex btn-margin">
     <div className="col-6">
-      <p>Our websites are fast. Faster websites are a better experience for your users and lead to fewer people bouncing. Search engines like it when people get what they need from your site and don't leave because of slow load times. This is especially important for mobile users of your website. </p>
+      <h5>Our websites are developed to be the fastest possible so less customers leave before loading</h5>
+      <p>By leaveraging static site generation our sites do not need to access information from a server prior to build making load time much faster without loosing any functionality. In other words we use tech stuff to your website kick ass.</p>
 
     </div>
     <div className="col-6">
-     <StaticImage src="../images/flamingo-car.svg" alt="flamingo driving a car"/>
+     <StaticImage src="../images/racecar.png" alt="flamingo driving a car"/>
       
     </div>
   </div>
@@ -109,10 +127,10 @@ alt="free"
 
 
 <section className="two-panel back">
-  
+<h3>Manage your own content</h3> 
   <div className="flex btn-margin">
   <div className="col-6">
-     <StaticImage src="../images/boy-on-computer.svg" alt="content management system "/>
+     <StaticImage src="../images/customizeyourcontent.png" alt="content management system "/>
       
     </div>
     <div className="col-6">
@@ -125,13 +143,13 @@ alt="free"
 
 </section>
 <section className="hero-about light-back2">
-<h3>Is your website performing the way you want?</h3>
+<h3>Get your content listed on Google</h3>
 <div className="flex margin-top">
 
   <div className="col-6 text-left ">
     <div className="space">
-<h5>Ask us how we can help.</h5>
-<p>If your website is old you may not be taking advantage of the latest trends and technology. Contact us and we will show you where your current website could be better and how it could affect meeting your goals. </p>
+<h5>Make sure that your site is found by your customers.</h5>
+<p>All our websites come with technical SEO, profesional analytics, and listing on popular seach engines. </p>
 </div>
 
  <div className="btn-margin" >
@@ -140,7 +158,7 @@ alt="free"
  </div>
   </div>
   <div className="col-6">
-<StaticImage src="../images/boy-on-computer.svg" alt="man building a website design"/>
+<StaticImage src="../images/seo.png" alt="man building a website design"/>
   </div>
 </div>
 </section>

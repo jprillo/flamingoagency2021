@@ -17,29 +17,28 @@ class BlogIndex extends React.Component {
       <Layout>
         <Seo title="Blog" />
         
-<div >
-  <div className="flex back">
-    <div className="col-7 " style={{margin: "0 auto"}} >    
-      <h1 className="align-center">Blog</h1>     
-      <h2 className="align-center">Learn about our web design and development process </h2> 
-    </div>   
-  </div>  
-  </div>
+
   
   <div className="flex blog-wrap light-back2" >
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <Link className="secondary-color col-5 blog-article" style={{padding: "5px",  backgroundImage: "url(" + node.frontmatter.featureImage + " )" , backgroundRepeat: "no-repeat", backgroundPosition: "center"}}  to={node.fields.slug}>
-            <div   key={node.fields.slug}>
+            <Link className="secondary-color col-5 blog-article" style={{backgroundImage: "url(" + node.frontmatter.featureImage + " )" }}  to={node.fields.slug}>
+           <div className="overlay">
+
+</div>
+            <div style={{position: "absolute", height: "100%", width: "100%",top: "0", left: "0", color: "white"}}>           
               
-              <small>{node.frontmatter.date}</small>
-              
-                <h3 >
-                  
-                    {title}
-                  
-                </h3>
+              <h3 >
+                
+                  {title}
+                
+              </h3>
+              <p>{node.frontmatter.description}</p>
+</div>
+
+            <div    key={node.fields.slug}>
+             
               
               
               <div>
@@ -47,6 +46,7 @@ class BlogIndex extends React.Component {
               </div>
           
             </div>
+           
             </Link>
           )
         })}</div>
@@ -69,7 +69,7 @@ export const pageQuery = graphql`
         node {
           id
           frontmatter {
-            date
+            description
             title
             featureImage
           }

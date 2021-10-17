@@ -1,8 +1,9 @@
 ---
 title: This is my first blog post
+description: "This is a place holding descripttion so I can figure out how it will look when it is finished."
 date: 2021-05-10
 templateKey: blog-post
-featureImage: ../images/icon.png
+featureImage: ../images/export.png
 ---
 Gatsby starter first blog post 
 

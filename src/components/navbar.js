@@ -25,7 +25,7 @@
                           <ul className="nav">
                                      <li><Link className="hack" activeStyle={activeStyle} to="/">Home</Link></li>
                               <li><Link to="/about/" activeStyle={activeStyle} className="hack">About</Link></li>
-                              <li><Link to="/blog/" activeStyle={activeStyle} className="hack">Blog</Link></li>
+                           
                               <li><Link to="/contact/" activeStyle={activeStyle} className="hack">Contact</Link></li>
                              
                        

@@ -20,6 +20,8 @@ body {
   --textTitle: #222;
   --textLink: blue;
   --hr: hsla(0, 0%, 0%, 0.2);
+  --ov: #ffffff; 
+  --ovText: black;
 
   
 }
@@ -36,6 +38,8 @@ body.dark {
   --textTitle: white;
   --textLink: yellow;
   --hr: hsla(0, 0%, 100%, 0.2);
+  --ov: #1b0f0f;
+  --ovText: white;
 }
 
 
@@ -45,6 +49,10 @@ body.dark {
     padding: 0 14%;
     @include breakpoint(md){
       padding: 0;
+     
+     
+     
+      
     }
     
   }
@@ -98,6 +106,9 @@ text-align: center;
   
 footer{
   text-align: center;
+ padding: 1em;
+ background-color: var(--bg);
+ font-family: $primary-font;
   a{
     color: $primary-color;
     text-decoration: none;
@@ -119,6 +130,7 @@ box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
   flex-direction: column;
   justify-content: space-between;
   p{ 
+    font-size: 20px;
   padding: 0 2%;    
   }
   h5{
@@ -127,14 +139,18 @@ box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
   
   @include breakpoint(md){
     margin:17px;
-    width: 299px;
-  height: 411px;
+    width: 30%;
+  height: 380px;
   }
 
   
   img{
-      margin: 10px 0;
-      width: 70%;
+    margin: 0 0 10px 0;
+    width: 20%;
+    @include breakpoint(md){
+      
+      width: 100px;
+    }
   }
   
  
@@ -145,7 +161,7 @@ box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
 .card-container{
   text-align: center;
   background: var(--bg);
-  padding:80px 5%;
+  padding:80px 10%;
  
 }
 
@@ -156,14 +172,35 @@ box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
 .justify-center{
 justify-content: center;
 }
-
+.overlay{
+  position: absolute; 
+  height: 100%; 
+  width: 100%; 
+  top: 0; 
+  left: 0; 
+  background: var(--ov); 
+  opacity: .90;
+ 
+}
+.blog-article:hover .overlay{
+  opacity: .8;
+}
 .blog-article{
   margin:0;
   padding: 5px;
-  border: solid 1px $accent-color;
-  background: white;
+  border: solid 5px $accent-color;
+  position: relative;
+   padding: 5px;
+    height: 280px;  
+    background-repeat: no-repeat;
+     background-position: center;
   h3{
-    color: $secondary-color;
+    color: var(--ovText);
+    font-size: 40px;
+    padding: 50px 0 0 ;
+  }
+  p{
+    padding: 0 50px
   }
   @include breakpoint(md){
     margin:50px 10px 0px;
@@ -198,7 +235,9 @@ justify-content: center;
 }
 
 .blog-wrap{
-   flex-wrap: wrap;justify-content: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding-top: 60px;
 }
 
 
@@ -264,19 +303,24 @@ form{
   text-align: center;
   color: var(--textNormal);
   
-  div{
-    margin: 1em;
-  }
+ 
   label{
     font-family: $primary-font;
+    @include breakpoint(md){
+      margin-right: 1.5em;
+      text-align: left;
+    }
     
   }
 }
 .field{
+  margin: 1em 0;
+  text-align: left;
+ 
   @include breakpoint(md){
   display: flex;
-  justify-content: space-between;
-  margin-right: 5em;
+  justify-content: center;
+  margin: 1.5em 5em;
 }
 }
 .blog-wrap{
@@ -367,3 +411,26 @@ p, h3, h4, h5, .formal{
   transform: rotate(45deg);
 }
 
+.banner{
+  
+  padding: 10%  ;  
+  background-color: var(--bg); 
+  h3{
+    font-size: 25px;
+    @include breakpoint(md){
+      font-size: 35px;
+    }
+  }
+
+@include breakpoint(md){
+  padding: 7% 14% ;
+
+}
+}
+
+.contact-input{
+  font-family: $primary-font;
+ font-size: 20px;
+ 
+
+}

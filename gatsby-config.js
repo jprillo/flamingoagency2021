@@ -29,7 +29,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/jason.png",
+        icon: "src/images/icon.png",
       },
     },
     "gatsby-plugin-mdx",
