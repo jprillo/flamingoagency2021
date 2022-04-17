@@ -19,6 +19,7 @@ function Seo({ description, lang, meta, title }) {
             title
             description
             
+            
           }
         }
       }
@@ -34,7 +35,7 @@ function Seo({ description, lang, meta, title }) {
     "@id":"https://formalflamingo.com/#webpage",
     "url": "https://formalflamingo.com",
     "name":"Melbourne FL Web Design | Formal Flamingo",
-    "isPartOf":{"@id":"https://formalflamingo.com/#website"},
+    "isPartOf":{"@id":"https://formalflamingo.com"},
     "description":"Melbourne Florida web design and development"
   
   };
@@ -79,6 +80,11 @@ function Seo({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `twitter:image`,
+          content: "https://www.formalflamingo.com/static/cb3e2da9b55356a286ca1bcad7a91596/ccc01/flamingo.webp"
+        },        
+
         {
           name: `google-site-verification`,
           content: `JA8lIlFfpwJ-MswIz19iWnjrBBsNl8cjYeCYWuyIFBE`,
