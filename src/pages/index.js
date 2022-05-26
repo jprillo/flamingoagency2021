@@ -44,8 +44,8 @@ const IndexPage = () => {
 
 
   <section className="hero-about light-back2">
-<h3>CREATIVE, RELIABEL, & HONEST<br/>
-<span className="secondary-font">Business Web Solutions in Space Coast Florida</span> </h3>
+<h3>Creative, Reliable, Honest<br/>
+<span className="secondary-font">Web solutions in Space Coast Florida</span> </h3>
 <div className="flex margin-top">
   <Fade left>
   <div className="col-6 hero-image">
@@ -55,7 +55,7 @@ const IndexPage = () => {
   <Fade right>
   <div className="col-6 text-left ">
   <p>We aim to develop the best business websites and applications in the Melbourne Florida area. 
-Our garuntee is to tell you exactly what you can expect and deliver on time without any hidden fees or broken promises. </p>
+Our guarantee is to tell you exactly what you can expect and deliver on time without any hidden fees or broken promises. </p>
 
  <div className="btn-margin">
   <a className="primary-button" href="./about/">About Us</a>
