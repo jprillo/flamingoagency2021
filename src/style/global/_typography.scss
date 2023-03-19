@@ -1,32 +1,38 @@
 /*! Typebase.less v0.1.0 | MIT License */
 
 
-  @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Montserrat:wght@500;700&display=swap');
   
   $primary-font: 'Montserrat', sans-serif;
+  $secondary-font: 'Hind Siliguri', sans-serif;
 
-  h1, h2, h3, h4, h5 {
+  h1, h3, h4, h5 {
     font-family: $primary-font;
     font-weight: bold;
-    margin: 0 0 15px 0;
-    @include breakpoint(md){       
-      margin: 0 0 30px 0;         
-     } 
+
+   
     
   }
-
+  h2{
+    font-family: $secondary-color;
+    padding: 1.5rem 0 1.5rem;
+  }
   p{
-    font-family:$primary-font;
+    font-family:$secondary-font;
     font-size: 20px;
+    line-height: 1.6rem;
+    padding: 2rem 0 .5rem 0 ;
     @include breakpoint(md){       
-      font-size: 22px;         
+      font-size: 22px; 
+
      } 
      
   }
 
   h1{
-    color: $secondary-color;
+    color: var(--secondary-color);
     font-size: 33px;
+    font-weight:bold;
     @include breakpoint(md){       
       font-size: 50px;
            
@@ -35,20 +41,19 @@
   }
 
   h2{
-    color: $accent-color;
+    color: var(--accent-color);
     font-size: 22px;
     @include breakpoint(md){       
-      font-size: 28px;         
+      font-size: 29px;         
      } 
   }
 
   h3{
     color: black;    
     font-size: 30px;
-    text-align: center;
     @include breakpoint(md){       
-      font-size: 35px;
-      padding: 80px 10% 30px 10%;         
+      font-size: 40px;
+      
      } 
   }
   .secondary-font{

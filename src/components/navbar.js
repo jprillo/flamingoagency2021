@@ -21,22 +21,22 @@
                   </div>
                   
                   <div >
-                      <div  className={` responsive-nav ${isActive ? 'mobile-nav' : ''}`}>
+       
+                      
+                   
+                  </div>
+      <div style={{display: "flex"}}> 
+      <div  className={` responsive-nav ${isActive ? 'mobile-nav' : ''}`}>
                           <ul className="nav">
                                      <li><Link className="hack" activeStyle={activeStyle} to="/">Home</Link></li>
                               <li><Link to="/about/" activeStyle={activeStyle} className="hack">About</Link></li>
                            
-                              <li><Link to="/contact/" activeStyle={activeStyle} className="hack">Contact</Link></li>
-                             
+                              <li><Link to="/contact/" activeStyle={activeStyle} className="hack">Contact</Link></li>                     
                        
   
                             
                           </ul>
                       </div>
-                   
-                  </div>
-      <div style={{display: "flex"}}> 
-
       <ThemeToggler>
         {({ theme, toggleTheme }) => (
            

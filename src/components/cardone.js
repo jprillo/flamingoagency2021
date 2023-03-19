@@ -18,7 +18,7 @@ const CardOne = ({
        <div>
         <h5 className="fix">{title}</h5>
        <img src={image} alt={alt}/>
-        <p>{description}</p>
+        <p className='text-left'>{description}</p>
         
         </div> 
         <div >

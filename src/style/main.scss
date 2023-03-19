@@ -7,13 +7,14 @@
 
 
 section{
-  padding: 80px 15%;
-  min-height:100vh;
+  padding: 150px 10vw;
+
 }
 body {
-  --bg: white;
+  --bg: rgb(255, 255, 255);
   --sbg: #ecf8ff;
   --vbg: ##97CFED;
+  --accent-color: #f80f80;
   --icon: yellow;
   --iconv: 0 0 15px 5px orange;
   --textNormal: #222;
@@ -22,6 +23,7 @@ body {
   --hr: hsla(0, 0%, 0%, 0.2);
   --ov: #ffffff; 
   --ovText: black;
+  --secondary-color:rgb(77, 64, 64);
 
   
 }
@@ -33,6 +35,7 @@ body.dark {
   --sbg: rgb(10, 0, 34);
   --vbg: #1b0f0f;
   --iconv: none;
+  --accent-color: #bfdaed;
   --icon: #97cfed;
   --textNormal: rgba(255, 255, 255, 0.88);
   --textTitle: white;
@@ -40,6 +43,7 @@ body.dark {
   --hr: hsla(0, 0%, 100%, 0.2);
   --ov: #1b0f0f;
   --ovText: white;
+  --secondary-color:white;
 }
 
 
@@ -48,7 +52,7 @@ body.dark {
     text-align:center;
     padding: 0 14%;
     @include breakpoint(md){
-      padding: 0;
+      padding: 0 0 0 5%;
      
      
      
@@ -57,25 +61,19 @@ body.dark {
     
   }
   .hero-page{
-    padding: 10%  ;  
+    padding: 50px 5vw  ;  
     background-color: var(--bg); 
   
   @include breakpoint(md){
-    padding: 7% 14% ;
-    height: 90vh;
+    padding: 80px 10vw ;
+
   }
   
   }
-  .btn-margin{
-    margin: 1.7em 0;
-    @include breakpoint(md){
-   
-   margin: 2.2em 0;
-      
-   }
-  }
+ 
+  
   .primary-button{
-    padding: .5em 1em; 
+    padding: .5em 3em; 
     font-weight: bold;
     font-size: 20px;
     background: #FF1988;
@@ -88,7 +86,7 @@ body.dark {
     font-family: $primary-font;        
     &:hover{
         background: $hover-color;     
-        color: black;
+        color: rgb(163, 160, 160);
         transition:.2s
     }
     &:active{
@@ -117,13 +115,13 @@ footer{
  
 .main-card{
   background: inherit;
-  box-shadow: 2px 2px black;
-  
-  border: 5px solid #97CFED;
+
+  border-radius: 25px;
+  border: 8px solid #97CFED;
 box-sizing: border-box;
-box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+
   
-  padding: 15px 25px 20px;
+  padding: 2rem 1rem;
   text-align: center;
   margin: 17px;
   display: flex; 
@@ -135,12 +133,13 @@ box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
   }
   h5{
    text-align: center;
+  
   }
   
   @include breakpoint(md){
-    margin:17px;
-    width: 30%;
-  height: 380px;
+    
+    width: 20vw;
+  height: 470px;
   }
 
   
@@ -148,7 +147,7 @@ box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
     margin: 0 0 10px 0;
     width: 20%;
     @include breakpoint(md){
-      
+      padding: 25px 0;
       width: 100px;
     }
   }
@@ -161,7 +160,7 @@ box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
 .card-container{
   text-align: center;
   background: var(--bg);
-  padding:80px 10%;
+ 
  
 }
 
@@ -429,8 +428,43 @@ p, h3, h4, h5, .formal{
 }
 
 .contact-input{
-  font-family: $primary-font;
- font-size: 20px;
+  font-family: $secondary-font;
+ font-size: 25px;
+ &:focus{
+  border: 5px solid $active-color;
+ }
  
 
+}
+.text-left{
+  text-align: left;
+}
+.align-center{
+align-items: center
+}
+.gap-2{
+  gap: 3vw;
+}
+.gap-1{
+  gap: 7vw;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

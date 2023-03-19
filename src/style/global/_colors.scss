@@ -5,12 +5,12 @@ $light-color1: white;
 $light-color2: #DFECF3;
 $dark-color1: #497D9A;
 $dark-color2: #1b0f0f;
-$hover-color:#ac0555;;
+$hover-color:#9fc6ff;;
 $hover-color2: rgb(255, 196, 0);
 $active-color:rgb(255, 196, 0);
 
 .light-back2{
-    background:  var(--sbg); ;
+    background:  var(--sbg); 
 }
 .back{
     background: var(--bg);
@@ -37,7 +37,7 @@ $nav-color: inherit;
 $top-nav-color: #000000;
 $nav-text-color: white;
 $top-nav-text-color: #fffefe;
-$active-color: #000139;
+$active-color: $primary-color;
 $nav-contact-color:$secondary-color;
 $nav-contact-text-color:white;
 $burger-color: $secondary-color;
