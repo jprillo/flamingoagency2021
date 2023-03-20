@@ -74,7 +74,7 @@ Unlock Your Online Potential</h2><h3>Honest, Reliable, and Creative Web Solution
 <section className="card-container">
   <div className="col-6 text-left"><h3 style={{marginBottom: "5px"}}>Our Web Design & Development Process</h3></div>
   
-<div className="flex justify-center " style={{margin: "50px 0", flexWrap: "wrap"}}>
+<div className="flex " style={{margin: "50px 0", flexWrap: "wrap", gap: "2vw"}}>
 <CardOne
 title="Discovery Session"
 description=" Our team will collaborate with you to comprehend your business, objectives, and website vision. We'll analyze your intended audience, essential features, and necessary functionality. "
@@ -83,26 +83,26 @@ alt="web development"
 
 />
 <CardOne
-title="Write Content"
-description="Create custom images and content to let customers know what your business is all about."
+title="Create Content"
+description=" Writing, editing, and formatting high-quality, relevant, and engaging content and custom images can help convey your brand's personality and differentiate you from competitors."
 image= {content}
 alt="web development"
 />
 <CardOne
 title="Website Design"
-description="Beautiful design that helps create leads and directs customers to where you want them "
+description="Selecting colors, fonts, images, and other design elements that will be used throughout the website. Additionally, we ensure that the website is user-friendly, visually appealing, and accessible on multiple devices and browsers. "
 image= {design}
 alt="web development"
 />
 <CardOne
 title="Develop Website"
-description="Our goal is to create a dynamic UI/UX experience with search engines in mind. "
+description="This is where we build the website's functionality and features. Our main focus is to make sure the website works well on different devices and is easy to find on search engines.  "
 image= {develop}
 alt="web development"
 />
 <CardOne
 title="Launch"
-description="Your website is live, take over control and start building your business online. "
+description="Your website is live. After a quick tutorial you are ready to take over control and start building your business online. "
 image= {launch}
 alt="web development"
 />

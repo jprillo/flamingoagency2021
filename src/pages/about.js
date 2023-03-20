@@ -19,16 +19,16 @@ const AboutPage = () => {
           />
             <div className='hero-page'>
   <div className="flex gap-2" style={{alignItems: "center"}}>
-    <div className="col-7" >    
+    <div className="col-6" >    
       <h1>About Us</h1>     
       <h2 style={{paddingRight: "5rem"}}>We are a digital marketing and agency dedicated to creating awesome websites for entreprenuers and bloggers.</h2> 
       <div  style={{marginTop: "3.5rem"}}>
       <a className="primary-button" href="/contact/">Contact Us</a>
       </div>
     </div>
-    <div className="col-5 hero-image">
+    <div className="col-6 hero-image">
    
-
+    <StaticImage  src="../images/agency.png" alt="Jason Prillo is the owner of Formal Flamingo"/>
     </div>
   </div>  
   </div>
@@ -36,17 +36,17 @@ const AboutPage = () => {
 
   <section className="light-back2">
       <h3>Meet Our Team.</h3>
-      <div className="flex add-pad">
+      <div className="flex add-pad" >
       
-        <div className="col-6 align-center about-pad">
+        <div className="col-6 align-center ">
         <StaticImage  src="../images/jason.png" alt="Jason Prillo is the owner of Formal Flamingo"/>
           </div>
           <div className="col-6">
         <h5>Jason Prillo</h5>
-        <p style={{color: "#FF6AB2"}}>Developer</p>
-        <p>Jason started Formal Flamingo in 2016.</p>
+        <h2>Developer</h2>
+        <p>Jason started Formal Flamingo in 2016. He specializes in using Javascript, CSS, and HTML to make website come alive.
         
-        <p> Jason likes Javascript and Table Tennis. </p>
+         Jason likes Gardening and Table Tennis. </p>
            
         </div>
       </div>
@@ -55,9 +55,9 @@ const AboutPage = () => {
 
       <div className="col-6">
       <h5>Sara Perno</h5>
-      <p style={{color: "#FF6AB2"}}>Designer</p>
-      <p>Sara is a web designer from Palm Bay, Florida.</p>
-      <p>Sara likes Cats and Butterflies</p>
+      <h2>Designer</h2>
+      <p>Sara is a web designer from Palm Bay, Florida.
+     Sara likes Cats and Butterflies</p>
       </div>
    
       
