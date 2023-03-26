@@ -468,3 +468,11 @@ align-items: center
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+
+
+.blog-post{
+  img, video{
+    width: 100%;
+  }
+}

@@ -8,4 +8,3 @@ featureImage: ../images/website-hosting.png
 
 It's Dolph
 
-<iframe width="1104" height="621" src="https://www.youtube.com/embed/vsGGTT9Te0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

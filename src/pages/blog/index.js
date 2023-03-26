@@ -2,10 +2,10 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 
-import Layout from "../components/layout2"
-import Seo from "../components/seo"
+import Layout from "../../components/layout2"
+import Seo from "../../components/seo"
 
-import "../style/main.scss"
+import "../../style/main.scss"
 
 class BlogIndex extends React.Component {
   render() {
@@ -18,8 +18,8 @@ class BlogIndex extends React.Component {
         <Seo title="Blog" />
         
 
-  
-  <div className="flex blog-wrap light-back2" >
+  <section className="light-back2" >
+  <div className="flex" >
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -50,6 +50,8 @@ class BlogIndex extends React.Component {
             </Link>
           )
         })}</div>
+
+</section>
       </Layout>
     )
   }
