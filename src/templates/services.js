@@ -5,7 +5,6 @@ import Layout from '../components/layout2.js'
 import ContactForm from '../components/contactForm.js'
 
 
-
 export default function Services({ data }) {
   const post = data.markdownRemark
   return (
@@ -20,6 +19,9 @@ export default function Services({ data }) {
         </div>
         <div className="col-4">
           <ContactForm/>
+
+   
+
         </div>
         </section>
         

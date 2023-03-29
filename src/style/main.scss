@@ -107,9 +107,14 @@ footer{
  padding: 1em;
  background-color: var(--bg);
  font-family: $primary-font;
+ p{
+  padding: 0;
+ }
+
   a{
     color: $primary-color;
     text-decoration: none;
+    padding: 0;
   }
 }
  
@@ -121,7 +126,7 @@ footer{
 box-sizing: border-box;
 
   
-  padding: 2rem 1rem;
+  padding: 1rem;
   text-align: center;
  
   display: flex; 

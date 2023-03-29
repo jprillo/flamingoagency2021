@@ -29,13 +29,13 @@ class Layout extends React.Component {
           </header>
         <main className="contain">{children}</main>   
 
-        <div className="secondary-back flex align-center " style={{padding: "5%"}}>
+        <section className="secondary-back flex gap-1 " style={{paddingBottom: " 10px", paddingTop: 0}}>
           <div className="col-6 " >
-                    <h5 className="align-center">Formal Flamingo</h5>
+                    <h5>Formal Flamingo</h5>
                    <p>A web design agency in Melbourne Florida specializing in helping your business dominate the web.</p> 
           </div>
 
-          <div className="col-6 social-media">
+          <div className="col-6 social-media align-center">
             <h5 className="align-center">Follow Us</h5>
             <div > 
              <a href="https://twitter.com/flamingodigital"><img alt=" pink and white twitter icon" src={twitter}></img></a>
@@ -43,16 +43,16 @@ class Layout extends React.Component {
             
             </div>
             </div>
-          </div>   
+          </section>   
            
-        <footer>
+        <footer style={{background: "pink"}}>
          
 
 
          
           <p style={{color: "hotpink"}}> Formal Flamingo Web Design ©{new Date().getFullYear()}</p>
         </footer>
-      
+
       </div>
     )
   }

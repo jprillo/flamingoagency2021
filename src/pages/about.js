@@ -14,14 +14,14 @@ const AboutPage = () => {
   
         <div>
            <Layout>
-           <Seo title="About Us"
-           description="We are a web design agency in Melbourne Florida specializing in building fast, modern, and original websites. "
+           <Seo title="Our Mission"
+           description="At our digital marketing agency, we specialize in developing exceptional websites for entrepreneurs and bloggers. Our team of experts is dedicated to creating tailored solutions that not only meet your needs but also exceed your expectations. Whether you need a brand-new website or want to revamp your existing one, we have the skills and expertise to help you achieve your online goals. Let us help you create an impressive online presence that drives traffic and boosts your bottom line. "
           />
             <div className='hero-page'>
   <div className="flex gap-2" style={{alignItems: "center"}}>
     <div className="col-6" >    
-      <h1>About Us</h1>     
-      <h2 style={{paddingRight: "5rem"}}>We are a digital marketing and agency dedicated to creating awesome websites for entreprenuers and bloggers.</h2> 
+      <h1>Our Mission</h1>     
+      <h2 style={{paddingRight: "5rem"}}>At our digital marketing agency, we specialize in developing exceptional websites for entrepreneurs and bloggers. Our team of experts is dedicated to creating tailored solutions that not only meet your needs but also exceed your expectations.</h2> 
       <div  style={{marginTop: "3.5rem"}}>
       <a className="primary-button" href="/contact/">Contact Us</a>
       </div>
@@ -70,6 +70,8 @@ const AboutPage = () => {
 
   <div className="light-back1 banner">
     <h3>Our goal is to deliver the fastest, highest performing websites available to businesses looking for an edge online. </h3>
+    <p> Whether you need a brand-new website or want to revamp your existing one, we have the skills and expertise to help you achieve your online goals.</p>
+    <p> Let us help you create an impressive online presence that drives traffic and boosts your bottom line.</p>
     <div className="btn-margin align-center" style={{marginTop: "3.5rem"}} >
       <Link className="primary-button" to="/contact/">Let's Talk</Link>
       </div>
