@@ -11,19 +11,53 @@ export default function Services({ data }) {
     
       <div>
         <Layout>
-        <Helmet title={post.frontmatter.title} defer={false} />
-        <section className="blog-post light-back1 flex gap-1">
-          <div className="col-8">
+        <Helmet>
+      <title>{ `${post.frontmatter.title} | Services` }</title>
+      <meta name="description" content={post.frontmatter.description} />
+     
+      <meta property="og:title" content={post.frontmatter.title} />
+      <meta property="og:description" content={post.frontmatter.description} />
+      
+      <meta property="og:type" content="article" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:site_name" content="Palm Bay Web Development" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={post.frontmatter.title} />
+      <meta name="twitter:description" content={post.frontmatter.description} />
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "${post.frontmatter.title}",
+            "description": "${post.frontmatter.description}",
+        
+            "author": {
+              "@type": "Person",
+              "name": "Jason Prillo"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Palm Bay Web Development",
+     
+            },
+           
+          }
+        `}
+      </script>
+   
+    </Helmet>
+        <div className="service-post light-back1 flex gap-1 ">
+          <div className="col-9">
         <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} /> 
         </div>
-        <div className="col-4">
-          <ContactForm/>
-
+        <div className="col-3">
+        
    
 
         </div>
-        </section>
+        </div>
         
         </Layout>
       </div>
@@ -37,6 +71,7 @@ export const query = graphql`
       html      
       frontmatter {
         title
+        description
   
         
       }

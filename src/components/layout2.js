@@ -36,7 +36,7 @@ class Layout extends React.Component {
           </div>
 
           <div className="col-6 social-media align-center">
-            <h5 className="align-center">Follow Us</h5>
+            <h5 className="align-center">Follow Me</h5>
             <div > 
              <a href="https://twitter.com/flamingodigital"><img alt=" pink and white twitter icon" src={twitter}></img></a>
              <a href="https://facebook.com/formalflamingo"><img alt="pink and white facebook icon" src={facebook}></img></a>
