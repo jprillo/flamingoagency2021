@@ -5,7 +5,6 @@ import { Link, graphql } from "gatsby"
 import Layout from "../../components/layout2"
 import Seo from "../../components/seo"
 
-import "../../style/main.scss"
 
 class BlogIndex extends React.Component {
   render() {

@@ -102,6 +102,30 @@ body.dark {
         font-size: 23px;
       }
   }
+  .more-info-link{
+    padding: .5em 0; 
+    font-weight: bold;
+    font-size: 20px;
+    color: #FF1988;
+    border-radius: 10px;  
+    box-sizing: border-box;
+    
+    margin: 50px 0 0 0;   
+   
+    ;    
+    font-family: $primary-font;        
+    &:hover{
+         
+        color: rgb(163, 160, 160);
+        transition:.2s
+    }
+    &:active{
+       color: black;
+    }
+    @media (min-width: 1024px) {
+        font-size: 23px;
+      }
+  }
 
 
  .align-center{
@@ -498,3 +522,92 @@ align-items: center
 }
 
 
+.btn-margin{
+  margin: 2.5rem 0;
+}
+
+
+.service-card {
+  flex: 1 0 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  min-width: 300px;
+
+}
+
+@media (min-width: 400px) {
+  .service-card {
+    flex: 1 0 calc(50% - 40px); /* (100% divided by 2 cards) - (left & right padding) */
+    margin-right: 20px;
+    height: 510px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+  border-radius: 25px;
+    h3, p{
+      color: black;
+    }
+  }
+  @media (min-width: 1300px) {
+.service-card{height: 400px;}
+  }
+  
+  /* remove right margin for every 2nd card */
+  .service-card:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  
+  /* add top margin from the second row of cards */
+  .service-card:nth-of-type(n + 3) {
+    margin-top: 20px;
+  }
+}
+
+
+/* For Chrome and similar browsers */
+::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: $primary-color; /* color of the tracking area */
+  border-radius: 10px; /* roundness of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background: $secondary-color; /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(11, 11, 143); /* color of the scroll thumb when hovering */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* width of the scrollbar */
+  scrollbar-color: #888 #f1f1f1; /* scroll thumb and track color */
+}
+
+/* For Internet Explorer and Edge */
+*::-ms-scrollbar {
+  width: 12px;
+}
+
+*::-ms-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+*::-ms-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+*::-ms-scrollbar-thumb:hover {
+  background: #555;
+}

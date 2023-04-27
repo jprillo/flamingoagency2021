@@ -72,7 +72,7 @@ const AboutPage = () => {
     <h3>Our goal is to deliver the fastest, highest performing websites available to businesses looking for an edge online. </h3>
     <p> Whether you need a brand-new website or want to revamp your existing one, we have the skills and expertise to help you achieve your online goals.</p>
     <p> Let us help you create an impressive online presence that drives traffic and boosts your bottom line.</p>
-    <div className="btn-margin align-center" style={{marginTop: "3.5rem"}} >
+    <div className="btn-margin align-center" >
       <Link className="primary-button" to="/contact/">Let's Talk</Link>
       </div>
   </div>
