@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
-import Layout from "../../components/layout2"
+import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 
 export default function ServicesPage() {
@@ -78,7 +78,7 @@ export default function ServicesPage() {
 <p>Improve your website's search engine visibility and attract more organic traffic with our SEO services. Learn more about our search engine optimization strategies.</p>
 </div>
 <div className="btn-margin" >
-<a className="more-info-link" href="/services/">Learn More About SEO</a>
+<a className="more-info-link" href="/services/seo">Learn More About SEO</a>
 </div>
 </div>
 

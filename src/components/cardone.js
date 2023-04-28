@@ -11,15 +11,16 @@ const CardOne = ({
   title,
   description,
  image, 
- alt
- 
+ alt,
+ link, 
+ linkName
 }) => (
     <div className="main-card">
        <div>
         <h5 className="fix">{title}</h5>
        <img src={image} alt={alt}/>
         <p className='text-left'>{description}</p>
-        
+        <a href={link}>{linkName}</a>
         </div> 
         <div >
 

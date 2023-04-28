@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { navigate } from 'gatsby-link';
-import Layout from '../components/layout2';
+import Layout from '../components/layout';
 import Seo from '../components/seo';
 import '../style/main.scss';
 

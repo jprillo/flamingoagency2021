@@ -34,9 +34,9 @@ function Seo({ description, lang, meta, title }) {
     "@type": "WebPage",
     "@id":"https://formalflamingo.com/#webpage",
     "url": "https://formalflamingo.com",
-    "name":"Melbourne FL Web Design | Formal Flamingo",
+    "name":"Palm Bay FL Web Design | Formal Flamingo",
     "isPartOf":{"@id":"https://formalflamingo.com"},
-    "description":"Melbourne Florida web design and development"
+    "description":"Palm Bay Florida web design and development"
   
   };
   

@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Layout from '../components/layout2'
+import Layout from '../components/layout'
 
 
 // markup

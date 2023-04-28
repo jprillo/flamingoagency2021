@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import Layout from "../components/layout2"
+import Layout from "../components/layout"
 import CardOne from '../components/cardone'
 
 import develop from '../images/develop.png'
@@ -87,18 +87,24 @@ title="Create Content"
 description=" Writing, editing, and formatting high-quality, relevant, and engaging content and custom images can help convey your brand's personality and differentiate you from competitors."
 image= {content}
 alt="web development"
+link="./services/content-management"
+linkName="Learn More"
 />
 <CardOne
 title="Website Design"
 description="Selecting colors, fonts, images, and other design elements that will be used throughout the website. Additionally, we ensure that the website is user-friendly, visually appealing, and accessible on multiple devices and browsers. "
 image= {design}
 alt="web development"
+link="./services/web-design"
+linkName="Learn More"
 />
 <CardOne
 title="Develop Website"
 description="This is where we build the website's functionality and features. Our main focus is to make sure the website works well on different devices and is easy to find on search engines.  "
 image= {develop}
 alt="web development"
+link="./services/web-development"
+linkName="Our Approach"
 />
 <CardOne
 title="Launch"
@@ -147,7 +153,10 @@ alt="web development"
       <p>Are you frequently making updates to your website's content?</p><p> Whether you need to add a blog to promote your business or make other changes, we offer reliable and efficient content management services.
 
 Our approach involves utilizing a headless content management system that offers a range of benefits. Specifically, we are able to install the same robust functionalities available on popular content management platforms like WordPress or Drupal, but with improved speed, unique design options, and enhanced security.</p>
-
+<div style={{marginTop: "3.5rem"}} >
+   
+   <a className="primary-button" href="./services/content-management/">Learn More</a> 
+   </div>
     </div>
   
   </div>
@@ -168,7 +177,7 @@ All of our websites come with advanced technical SEO, as well as professional an
 
  <div style={{marginTop: "3.5rem"}} >
    
- <a className="primary-button" href="./about/">About Us</a> 
+ <a className="primary-button" href="./services/seo/">Our SEO Services</a> 
  </div>
   </div>
   <div className="col-6">
