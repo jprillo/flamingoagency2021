@@ -1,8 +1,12 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const { fmImagesToRelative } = require('gatsby-remark-relative-images-v2');
+const _ = require('lodash')
+
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
+  fmImagesToRelative(node);
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
     createNodeField({
@@ -25,6 +29,7 @@ exports.createPages = async ({ graphql, actions }) => {
             }
             frontmatter{
               templateKey
+              tags
             }
           }
         }
@@ -43,4 +48,31 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+
+   // Tag pages:
+   let tags = []
+   // Iterate through each post, putting all found tags into `tags`
+   result.data.allMarkdownRemark.edges.forEach((edge) => {
+     if (_.get(edge, `node.frontmatter.tags`)) {
+       tags = tags.concat(edge.node.frontmatter.tags)
+     }
+   })
+   // Eliminate duplicate tags
+   tags = _.uniq(tags)
+
+   // Make tag pages
+   tags.forEach((tag) => {
+     const tagPath = `/tags/${_.kebabCase(tag)}/`
+
+     createPage({
+       path: tagPath,
+       component: path.resolve(`src/templates/tags.js`),
+       context: {
+         tag,
+       },
+     })
+   })
+
+
+
 }

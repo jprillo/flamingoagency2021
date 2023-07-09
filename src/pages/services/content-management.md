@@ -4,7 +4,7 @@ title: Harnessing the Power of Static Site Generation and Headless CMS with Form
 description: "Discover how Formal Flamingo leverages static site generation and headless CMS to deliver robust, efficient, and SEO-friendly websites."
 date: 2021-05-10
 templateKey: services
-featureImage: ../images/export.png
+
 ---
 
 

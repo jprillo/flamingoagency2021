@@ -1,81 +1,116 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import Layout from '../../components/layout'
+import { graphql} from "gatsby"
+import { Helmet } from 'react-helmet'
+
+import BlogArticle from '../../components/blogArticleOne'
+import TagBar from '../../components/tagBar'
 
 
-import Layout from "../../components/layout"
-import Seo from "../../components/seo"
+export default function Blog({data}) {
+    const d = data.allMarkdownRemark;
+    const h = d.edges[0].node.frontmatter
+    const hslug = d.edges[0].node.fields.slug
+    const f = d.edges[1].node.frontmatter
+    const fslug = d.edges[1].node.fields.slug
+    const t = d.edges[2].node.frontmatter
+    const tslug = d.edges[2].node.fields.slug
+    const htag = h.tags[0]
+    const otherPosts = d.edges.slice(3)
 
 
-class BlogIndex extends React.Component {
-  render() {
-    const { data } = this.props
- 
-    const posts = data.allMarkdownRemark.edges
 
-    return (
-      <Layout>
-        <Seo title="Blog" />
-        
+  return <div >
+      <Helmet>
+        <title>Geeby | Gatsby Starter Blog</title>
+        <meta name="description" content="VYNTRADE was founded in 2018 to offer consulting to Wine & Spirit Industry Companies.​" />
+        <meta name="theme-color" content="black" />
+      </Helmet>
 
-  <section className="light-back2" >
-  <div className="flex" >
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <Link className="secondary-color col-5 blog-article" style={{backgroundImage: "url(" + node.frontmatter.featureImage + " )" }}  to={node.fields.slug}>
-           <div className="overlay">
-
+<div style={{background: "white"}}>
+<Layout color="ddd" >
+  <div className="h-pad pad-top">
+<TagBar/>
 </div>
-            <div style={{position: "absolute", height: "100%", width: "100%",top: "0", left: "0", color: "white"}}>           
-              
-              <h3 >
-                
-                  {title}
-                
-              </h3>
-              <p>{node.frontmatter.description}</p>
+  <div className="flex h-pad"  >
+    <div className="col-8-gap">
+      <BlogArticle
+      width = ""
+      type = "feature"
+      slug = {hslug}
+      tag = {htag}
+      title = {h.title}
+      description = {h.description}
+      featuredImage = {h.featuredImage.publicURL}
+      />
+
+
+
+    </div>
+    <div className="col-4-gap column gap-2 padd" style={{display: "flex", flexDirection: "column"}} >
+    <BlogArticle
+     width = ""
+      type = "normal"
+      slug = {fslug}
+      tag = {f.tags[0]}
+      title = {f.title}
+      description = {f.description}
+      featuredImage = {f.featuredImage.publicURL}
+      />
+
+<BlogArticle
+    width = ""
+      type = "normal"
+      slug = {tslug}
+      tag = {t.tags[0]}
+      title = {t.title}
+      description = {t.description}
+      featuredImage = {t.featuredImage.publicURL}
+      />
+
+
+    </div>
+    </div>
+    <div className="flex gap-2 h-pad b-pad" >
+        {otherPosts.map((item) => (
+          <div className="col-6">
+  <BlogArticle
+  width = "nnn"
+  type = "normal"
+  slug = {item.node.fields.slug}
+  tag = {item.node.frontmatter.tags[0]}
+  title = {item.node.frontmatter.title}
+  description = {item.node.frontmatter.description}
+  featuredImage = {item.node.frontmatter.featuredImage.publicURL}
+  />
+</div>
+))}
+
+      </div>
+    </Layout>
 </div>
 
-            <div    key={node.fields.slug}>
-             
-              
-              
-              <div>
-              
-              </div>
-          
-            </div>
-           
-            </Link>
-          )
-        })}</div>
-
-</section>
-      </Layout>
-    )
-  }
+  </div>
 }
 
-export default BlogIndex
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-post"}}}) {
+export const query = graphql`
+
+query MyQuery {
+      allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-post"}}}) {
       edges {
         node {
           id
-          frontmatter {
-            description
-            title
-            featureImage
-          }
           fields {
             slug
+          }
+          frontmatter {
+            title
+            description
+            tags
+            featuredImage {
+                publicURL
+             }
           }
         }
       }

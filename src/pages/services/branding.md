@@ -3,10 +3,10 @@ title: The Importance of Effective Branding for Your Business.
 description: "We offer a full range of branding services tailored to meet your specific needs."
 date: 2021-05-10
 templateKey: services
-featureImage: ../images/export.png
+
 ---
 
-![Drag Racing](../images/branding.png)
+
 ## Are you struggling to establish a strong brand identity for your company?
 
 
@@ -26,10 +26,10 @@ From logo design to website development, we offer a full range of branding servi
 #### Brand guidelines:
  We'll create a comprehensive guide that outlines your brand's tone of voice, visual style, and messaging, ensuring consistency across all channels.
 
-#### Brand strategy: 
+#### Brand strategy:
 We'll work with you to develop a comprehensive branding strategy that aligns with your business goals and sets you apart from the competition.
 
 
-Branding is more than just a logo or website. It's about creating a cohesive and memorable brand that resonates with your target audience and helps you achieve your business goals. 
+Branding is more than just a logo or website. It's about creating a cohesive and memorable brand that resonates with your target audience and helps you achieve your business goals.
 
 Contact us today to learn more about our branding services and how we can help you take your business to the next level!

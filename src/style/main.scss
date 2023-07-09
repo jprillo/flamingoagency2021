@@ -27,11 +27,11 @@ body {
   --textTitle: #222;
   --textLink: blue;
   --hr: hsla(0, 0%, 0%, 0.2);
-  --ov: #ffffff; 
+  --ov: #ffffff;
   --ovText: black;
   --secondary-color:rgb(77, 64, 64);
 
-  
+
 }
 
 body.dark {
@@ -59,39 +59,39 @@ body.dark {
     padding: 0 14%;
     @include breakpoint(md){
       padding: 0 0 0 5%;
-     
-     
-     
-      
+
+
+
+
     }
-    
+
   }
   .hero-page{
-    padding: 50px 5vw  ;  
-    background-color: var(--bg); 
-  
+    padding: 50px 5vw  ;
+    background-color: var(--bg);
+
   @include breakpoint(md){
     padding: 80px 10vw ;
 
   }
-  
+
   }
- 
-  
+
+
   .primary-button{
-    padding: .5em 3em; 
+    padding: .5em 3em;
     font-weight: bold;
     font-size: 20px;
     background: #FF1988;
-    border-radius: 10px;  
+    border-radius: 10px;
     box-sizing: border-box;
     box-shadow: .12em .20em .12em rgba(0, 0, 0, 0.25);
-    margin: 50px 0 0 0;   
+    margin: 50px 0 0 0;
     color: white;
-    ;    
-    font-family: $primary-font;        
+    ;
+    font-family: $primary-font;
     &:hover{
-        background: $hover-color;     
+        background: $hover-color;
         color: rgb(163, 160, 160);
         transition:.2s
     }
@@ -103,19 +103,19 @@ body.dark {
       }
   }
   .more-info-link{
-    padding: .5em 0; 
+    padding: .5em 0;
     font-weight: bold;
     font-size: 20px;
     color: #FF1988;
-    border-radius: 10px;  
+    border-radius: 10px;
     box-sizing: border-box;
-    
-    margin: 50px 0 0 0;   
-   
-    ;    
-    font-family: $primary-font;        
+
+    margin: 50px 0 0 0;
+
+    ;
+    font-family: $primary-font;
     &:hover{
-         
+
         color: rgb(163, 160, 160);
         transition:.2s
     }
@@ -131,7 +131,7 @@ body.dark {
  .align-center{
 text-align: center;
  }
-  
+
 footer{
   text-align: center;
  padding: 1em;
@@ -147,7 +147,7 @@ footer{
     padding: 0;
   }
 }
- 
+
 .main-card{
   background: inherit;
 
@@ -155,29 +155,29 @@ footer{
   border: 8px solid #97CFED;
 box-sizing: border-box;
 
-  
+
   padding: 1rem;
   text-align: center;
- 
-  display: flex; 
+
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  p{ 
+  p{
     font-size: 20px;
-  padding: 0 2%;    
+  padding: 0 2%;
   }
   h5{
    text-align: center;
-  
+
   }
-  
+
   @include breakpoint(md){
-    
+
     width: 25vw;
   height: 470px;
   }
 
-  
+
   img{
     margin: 0 0 10px 0;
     width: 20%;
@@ -186,17 +186,17 @@ box-sizing: border-box;
       width: 100px;
     }
   }
-  
- 
-  
+
+
+
   }
 
-  
+
 .card-container{
   text-align: center;
   background: var(--bg);
- 
- 
+
+
 }
 
 .fix{
@@ -207,46 +207,186 @@ box-sizing: border-box;
 justify-content: center;
 }
 .overlay{
-  position: absolute; 
-  height: 100%; 
-  width: 100%; 
-  top: 0; 
-  left: 0; 
-  background: var(--ov); 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: var(--ov);
   opacity: .90;
- 
+
 }
-.blog-article:hover .overlay{
-  opacity: .8;
-}
-.blog-article{
-  margin:0;
-  padding: 5px;
-  border: solid 5px $accent-color;
-  position: relative;
-   padding: 5px;
-    height: 280px;  
-    background-repeat: no-repeat;
-     background-position: center;
-  h3{
-    color: var(--ovText);
-    font-size: 40px;
-    padding: 50px 0 0 ;
-  }
-  p{
-    padding: 0 50px
-  }
+
+.feature{
+  height: 550px;
+  padding: 1em 1.5em;
   @include breakpoint(md){
-    margin:50px 10px 0px;
+      padding: 2em 3em;
+  }
+
+ span{
+  font-size: 25px;
+  font-family: $primary-font;
+ }
+  h1{
+      font-size: 40px;
+      @include breakpoint(md){
+          font-size: 40px;
+      }
 
   }
+  h2{
+      font-size: 50px;
+  }
+
+
+}
+.nnn{
+  width: calc(100% - 1vh);
+  @include breakpoint(md){
+      width: calc(100% - 1vh);
+  }
+  @include breakpoint(lg){
+      width: calc(50% - 1vh);
+  }
+
+
+
+}
+.normal {
+  height: 250px;
+  padding: 1em 1.5em;
+
+
+ p{
+  display: none;
+ }
+  h1{
+      font-size: 25px;
+  }
+
+  span{
+      font-family: $primary-font;
+      font-size: 20px;
+  }
+}
+.gap-2{
+  gap: 50px;
+  }
+.padd{
+  padding: 0 0 0 0;
+  @include breakpoint(md){
+      padding: 0 0 0 50px;
+
+  }
+}
+.col-4-gap {
+  width:100%;
+  @include breakpoint(md){
+    width: 34%;
+  min-width:300px;
+    margin-bottom: 3rem;
+   }  }
+.gap-3{
+  gap: 2%;
+}
+.col-8-gap {
+  width:100%;
+  @include breakpoint(md){
+    width: 65.5%;
+  min-width:300px;
+    margin-bottom: 3rem;
+   }  }
+.h-pad{
+  padding-left: 5vw;
+  padding-right: 5vw;
+  @include breakpoint(sm){
+      padding-left: 10vw;
+      padding-right: 10vw;
+  }
+  @include breakpoint(md){
+      padding-left: 4vw;
+      padding-right: 4vw;
+  }
+  @include breakpoint(lg){
+      padding-left: 7vw;
+      padding-right: 7vw;
+   }
+   @include breakpoint(xlg){
+      padding-left: 10vw;
+      padding-right: 10vw;
+   }
+
+
+}
+.tag-bar{
+
+  a, p{
+      padding: .5rem 2rem;
+      margin: .5rem;
+      color: #b3b8be;
+      font-family: $primary-font;
+      font-weight: bold;
+      border-radius: 50px;
+      background:  #47494f;
+  }
+}
+.tag-flag{
+
+  color: black;
+
+  font-weight: bold;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 25px;
+  max-width: 15em;
+  align-self: flex-start;
+  font-family: $secondary-font;
+  margin-bottom: 1em;
+
+
+
+
+  }
+.blog-article{
+  border-radius: 25px;
+  border: solid 10px $primary-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: 150% 150%;;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: all .7s ease-in-out;
+  h1{
+
+      color: white;
+  }
+  p{
+    color: white;
+  }
+
+
+  &:hover h1{
+     color: rgb(187, 178, 178);
+  }
+  &:hover p{
+      color: rgb(187, 178, 178);
+   }
+
+
+
+
 }
 .article{
   padding: 0 10%;
   margin: 0 0 100px;
   h3{
     padding-bottom: 1.5em;
-    
+
   }
 
   @include breakpoint(md){
@@ -262,9 +402,9 @@ justify-content: center;
 
   @include breakpoint(md){
    width: 80%;
-  
+
    font-size: 18px;
-   
+
   }
 }
 
@@ -304,7 +444,7 @@ label{
     margin: 5%;
     @include breakpoint(md){
     margin: 0 0 5% 0;
-    
+
        }
 
   }
@@ -336,21 +476,21 @@ font-weight: 700;
 form{
   text-align: center;
   color: var(--textNormal);
-  
- 
+
+
   label{
     font-family: $primary-font;
     @include breakpoint(md){
       margin-right: 1.5em;
       text-align: left;
     }
-    
+
   }
 }
 .field{
   margin: 1em 0;
   text-align: left;
- 
+
   @include breakpoint(md){
 
   margin: 1.5em 5em;
@@ -376,7 +516,7 @@ p, h3, h4, h5, .formal{
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
 }
 
 /* Hide the default checkbox */
@@ -441,9 +581,9 @@ p, h3, h4, h5, .formal{
 }
 
 .banner{
-  
-  padding: 10%  ;  
-  background-color: var(--bg); 
+
+  padding: 10%  ;
+  background-color: var(--bg);
   h3{
     font-size: 25px;
     @include breakpoint(md){
@@ -463,7 +603,7 @@ p, h3, h4, h5, .formal{
  &:focus{
   border: 5px solid $active-color;
  }
- 
+
 
 }
 .text-left{
@@ -472,9 +612,7 @@ p, h3, h4, h5, .formal{
 .align-center{
 align-items: center
 }
-.gap-2{
-  gap: 3vw;
-}
+
 .gap-1{
   gap: 7vw;
 }
@@ -555,12 +693,12 @@ align-items: center
   @media (min-width: 1300px) {
 .service-card{height: 400px;}
   }
-  
+
   /* remove right margin for every 2nd card */
   .service-card:nth-of-type(2n) {
     margin-right: 0;
   }
-  
+
   /* add top margin from the second row of cards */
   .service-card:nth-of-type(n + 3) {
     margin-top: 20px;
@@ -610,4 +748,21 @@ align-items: center
 
 *::-ms-scrollbar-thumb:hover {
   background: #555;
+}
+.blog-content{
+
+  img{
+  width: 100%;
+  height:45vh;
+  object-fit: cover;
+  padding: 3vh 0;
+}
+h2{
+  padding: 1rem 0;
+  color: $accent-color;
+}
+h3{ color:$primary-color;}
+p{
+  padding: 1em 0;
+}
 }

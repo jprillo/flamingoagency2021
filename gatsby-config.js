@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Formal Flamingo Web Solutions",
-    siteUrl: `https://formalflamingo.com`,
-   
+    title: "Geeby | Gatsby Minimum Starter",
+    siteUrl: `https://gatsby3starter.netlify.app`,
     "menuLinks": [
       {
         "name": "HOME",
@@ -15,14 +14,13 @@ module.exports = {
     ]
   },
   plugins: [
-    "gatsby-plugin-netlify-cms",
+
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
-    'gatsby-plugin-dark-mode',
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "G-G71XJR2J30",
+        trackingId: "G-WVS33VVKCS",
       },
     },
     "gatsby-plugin-react-helmet",
@@ -37,11 +35,23 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     `gatsby-transformer-remark`,
+    `gatsby-plugin-netlify-cms-paths`,
+
+
     {
+      // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
       options: {
-        name: 'images',
-        path: './static/images/',
+        path: "./static/img/",
+        name: "uploads",
+      },
+    },
+    {
+
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "./src/images/",
       },
       __key: "images",
     },
@@ -52,6 +62,12 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
     },
   ],
 };
