@@ -35,7 +35,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     `gatsby-transformer-remark`,
-    `gatsby-plugin-netlify-cms-paths`,
+
 
 
     {
@@ -63,11 +63,6 @@ module.exports = {
       },
       __key: "pages",
     },
-    {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-      },
-    },
+  
   ],
 };
