@@ -17,6 +17,7 @@ module.exports = {
 
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
+    'gatsby-plugin-netlify',
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
@@ -63,6 +64,6 @@ module.exports = {
       },
       __key: "pages",
     },
-  
+
   ],
 };
