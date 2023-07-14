@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: A Professionally Designed Website Can Boost Your Palm Bay Business
+title: "Boost Your Palm Bay Business with a Professionally Optimized Website"
 date: 2023-03-17T15:04:10.000Z
 author: Jason Prillo
 authorImage: ../../../static/img/nft.png

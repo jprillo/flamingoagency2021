@@ -47,10 +47,11 @@ export default function Services({ data }) {
       </script>
 
     </Helmet>
-        <div className="service-post light-back1 flex gap-1 ">
-          <div className="col-9">
+        <div className="service-post light-back1 flex gap-1  ">
+          <div className="col-8">
         <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+
+        <div  dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
         <div className="col-3">
 

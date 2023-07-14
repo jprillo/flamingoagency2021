@@ -2,11 +2,10 @@
 templateKey: blog-post
 title: "How to Improve Your Side Hustle with a Website"
 featuredImage: ../../../static/img/nft.png
-date: 2016-12-17T15:04:10.000Z
+date: 2023-05-17T15:04:10.000Z
 author: Jason Prillo
 authorImage: ../../../static/img/manatee.png
-description: The Coffee Taster’s Flavor Wheel, the official resource used by
-  coffee tasters, has been revised for the first time this year.
+description: If you’re looking for ways to enhance your side hustle, building a website can be an excellent way to do just that. A website can help you to expand your reach and reach more potential customers. Here are some of the key benefits of having a website for your side hustle, and how you can use it to improve your business.
 
 color1: "#5C8865"
 tags:
