@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NavBar from "./navbar";
 import facebook from "../images/facebook.svg";
 import twitter from "../images/twitter.svg";
 import "../style/main.scss";
+
+import TagManager from "react-gtm-module";
+
+
 
 const Layout = (props) => {
   const [isActive, setIsActive] = useState(false);
@@ -13,6 +17,9 @@ const Layout = (props) => {
 
   const { children } = props;
 
+  useEffect(() => {
+    TagManager.initialize({ gtmId: "G-G71XJR2J30" });
+  }, []);
   return (
     <div>
       <header>
