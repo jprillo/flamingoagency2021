@@ -22,7 +22,7 @@ export default function Blog({data}) {
 
   return <div >
       <Helmet>
-        <title>Geeby | Gatsby Starter Blog</title>
+        <title>Palm Bay Web Design</title>
         <meta name="description" content="VYNTRADE was founded in 2018 to offer consulting to Wine & Spirit Industry Companies.​" />
         <meta name="theme-color" content="black" />
       </Helmet>

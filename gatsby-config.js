@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Geeby | Gatsby Minimum Starter",
-    siteUrl: `https://gatsby3starter.netlify.app`,
+    title: " Formal Flamingo Web Design",
+    siteUrl: `https://formalflamingo.com`,
     "menuLinks": [
       {
         "name": "HOME",
