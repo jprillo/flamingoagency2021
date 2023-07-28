@@ -2,7 +2,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Montserrat:wght@500;700&display=swap');
-  
+
   $primary-font: 'Montserrat', sans-serif;
   $secondary-font: 'Hind Siliguri', sans-serif;
 
@@ -10,76 +10,76 @@
     font-family: $primary-font;
     font-weight: bold;
 
-   
-    
+
+
   }
   h2{
     font-family: $secondary-color;
     padding: 1.5rem 0 1.5rem;
   }
-  p{
+  p, li{
     font-family:$secondary-font;
     font-size: 20px;
     line-height: 1.6rem;
     padding: 2rem 0 .5rem 0 ;
-    @include breakpoint(md){       
-      font-size: 22px; 
+    @include breakpoint(md){
+      font-size: 22px;
 
-     } 
-     
+     }
+
   }
 
   h1{
     color: var(--secondary-color);
     font-size: 33px;
     font-weight:bold;
-    @include breakpoint(md){       
+    @include breakpoint(md){
       font-size: 50px;
-           
-     } 
-     
+
+     }
+
   }
 
   h2{
     color: var(--accent-color);
     font-size: 22px;
-    @include breakpoint(md){       
-      font-size: 29px;         
-     } 
+    @include breakpoint(md){
+      font-size: 29px;
+     }
   }
 
   h3{
-    color: black;    
+    color: black;
     font-size: 30px;
-    @include breakpoint(md){       
+    @include breakpoint(md){
       font-size: 40px;
-      
-     } 
+
+     }
   }
   .secondary-font{
     color: $secondary-color
   }
-  
+
 
   h4{
-    color: black;    
+    color: black;
     font-size: 30px;
     text-align: center;
     text-transform: capitalize;
-    @include breakpoint(md){       
+    @include breakpoint(md){
       font-size: 40px;
       margin-bottom:30px;
-              
-     } 
+
+     }
   }
 
-  
+
   h5{
-    color: black;    
+    color: black;
     font-size: 22px;
     text-align: left;
-    @include breakpoint(md){       
+    @include breakpoint(md){
       font-size: 25px;
-           
-     } 
+
+     }
   }
