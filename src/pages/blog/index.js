@@ -23,7 +23,7 @@ export default function Blog({data}) {
   return <div >
       <Helmet>
         <title>Palm Bay Web Design</title>
-        <meta name="description" content="VYNTRADE was founded in 2018 to offer consulting to Wine & Spirit Industry Companies.​" />
+        <meta name="description" content="Formal Flamingo is a web development web design and digital marketing agency in Palm Bay Florida​" />
         <meta name="theme-color" content="black" />
       </Helmet>
 

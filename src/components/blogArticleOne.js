@@ -14,15 +14,15 @@ export default function BlogArticle({
 }) {
 
     const usedTags = [
-      "Business", "Web Design", "SEO" 
+      "Business", "Design", "SEO"
       ]
       const tagColors = [
 
+        "#FF69B4", // Neon Pink
+        "#FFFF00", // Neon Yellow
+        "#4D4DFF", // Neon Blue
 
         "#39FF14", // Neon Green
-        "#4D4DFF", // Neon Blue
-        "#FFFF00", // Neon Yellow
-        "#FF69B4", // Neon Pink
         "#FFA500", // Neon Orange
         "#9400D3", // Neon Purple
         "#00FFFF", // Neon Cyan

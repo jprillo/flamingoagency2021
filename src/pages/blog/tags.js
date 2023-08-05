@@ -16,7 +16,7 @@ const TagsPage = ({
     "Programing", "Business", "Design", "Culture" , "Humor"
   ],
   tagColors = [
-    "#BC0000", "#045B0D", "#051390", "#813C16", "#7D0590"
+    "#BC0000", "#FF69B4", "#051390", "#813C16", "#7D0590"
   ]
 }) => (
 

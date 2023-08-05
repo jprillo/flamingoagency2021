@@ -9,7 +9,7 @@ featuredImage: ../../../static/img//nft.png
 
 color1: "#008000"
 tags:
-  - Web Design
+  - Design
 ---
 
 
