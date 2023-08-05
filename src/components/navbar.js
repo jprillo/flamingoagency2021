@@ -28,12 +28,12 @@
       <div style={{display: "flex"}}>
       <div  className={` responsive-nav ${isActive ? 'mobile-nav' : ''}`}>
                           <ul className="nav">
-                                     <li><Link className="hack" activeStyle={activeStyle} to="/">Home</Link></li>
-                              <li><Link to="/about/" activeStyle={activeStyle} className="hack">About</Link></li>
-                              <li><Link to="/services/" activeStyle={activeStyle} className="hack">Services</Link></li>
-                              <li><Link to="/blog/" activeStyle={activeStyle} className="hack">Blog</Link></li>
+                                     <li className="nav-link"><Link className="hack" activeStyle={activeStyle} to="/">Home</Link></li>
+                              <li  className="nav-link"><Link to="/about/" activeStyle={activeStyle} className="hack">About</Link></li>
+                              <li className="nav-link"><Link to="/services/" activeStyle={activeStyle} className="hack">Services</Link></li>
+                              <li  className="nav-link"><Link to="/blog/" activeStyle={activeStyle} className="hack">Blog</Link></li>
 
-                              <li><Link to="/contact/" activeStyle={activeStyle} className="hack">Contact</Link></li>
+                              <li  className="nav-link"><Link to="/contact/" activeStyle={activeStyle} className="hack">Contact</Link></li>
 
 
 

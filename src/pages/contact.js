@@ -36,11 +36,11 @@ const Index = () => {
     <Layout>
       <Seo
         title="Contact Us"
-        description="Are you ready to start making the most out of your online business. Let's talk about your new website. Melbourne FL."
+        description="Are you ready to start making the most out of your online business. Let's talk about your new website. Palm Bay FL."
       />
 
       <div>
-        <div style={{ textAlign: 'center' }} className="banner">
+        <div style={{ textAlign: 'center', paddingTop: "50px" }} className="banner">
           <h4>Nice to meet you. Let's talk.</h4>
           <form
             name="contact"

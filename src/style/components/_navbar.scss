@@ -3,15 +3,15 @@
   position: relative;
   display: block;
   width: 40px;
-  height: 40px;    
+  height: 40px;
   z-index:1000;
   margin-left: auto;
-  
- 
+
+
   @include breakpoint(md){
       display: none;
   }
-  }    
+  }
   .burger-open{
   width: 100%;
   height: 100%;
@@ -34,7 +34,7 @@
       .line03 {
       top:69%;
       }
-    
+
       .burger-close .line {
         box-shadow: none;
         background: $secondary-color;
@@ -47,7 +47,7 @@
       transform:rotate(-45deg);
       top:49%;
       }
-    
+
 
 /**************************************END HAMBURGER*******************************/
 
@@ -65,13 +65,13 @@ color: $active-color;
 display: flex;
 justify-content: space-between;
   padding:  .5em .5em .25em;
-  background-color: var(--bg);     
-  align-items: center; 
-  transition: background .5s; 
-  
+  background-color: var(--bg);
+  align-items: center;
+  transition: background .5s;
+
   @include breakpoint(md){
     padding:  1em 10vw;
-    transition: background 0s; 
+    transition: background 0s;
   }
 
 .logo-wrap a{
@@ -80,7 +80,7 @@ justify-content: space-between;
   font-family: $primary-font;
   @include breakpoint(md){
    font-size: 32px;
- 
+
   }
 
   &:hover{
@@ -94,7 +94,7 @@ margin-left: 25px;
 }
 
 }
-} 
+}
 
 
 .responsive-nav.mobile-nav .nav{
@@ -105,16 +105,16 @@ margin-left: 25px;
   padding: 18vh 10% 10% 10%;
   display: flex;
   flex-direction: column;
-  height: 100vh;  
+  height: 100vh;
   background: $primary-color;
   z-index: 1000;
   text-align: center;
   @include breakpoint(md){
       padding:0;
       width: auto;
-      position: relative;               
+      position: relative;
       flex-direction: row;
-      height: auto; 
+      height: auto;
       background: inherit;
       margin: .75em;
   }
@@ -126,10 +126,10 @@ margin-left: 25px;
   color: $nav-text-color;
   font-size: 35px;
   line-height: 120%;
-  margin:  40px 0;    
-  @include breakpoint(md){       
-      font-weight: 300;     
-      font-size: 20px;       
+  margin:  40px 0;
+  @include breakpoint(md){
+      font-weight: 300;
+      font-size: 20px;
       margin: .5em;
       padding: .5em;
       color: darkslategrey;
@@ -146,18 +146,20 @@ margin-left: 25px;
   position: fixed;
   right: -100vw;
   transition: all .3s ease-in-out;
-  
+  .nav-link{
+    padding: 0 !important;
+  }
   @include breakpoint(md){
       width: auto;
-      position: relative;  
+      position: relative;
       margin: .75em;
-      display: flex;       
+      display: flex;
       flex-direction: row;
-      height: auto;  
+      height: auto;
       background: inherit;
       left: 0;
       transition: none;
-     
+
 
   }
 
@@ -175,7 +177,7 @@ margin-left: 25px;
   }
   &:hover {
     color: $secondary-color;
-   
+
   }
   &:active {
     color: $active-color;
@@ -188,13 +190,13 @@ margin-left: 25px;
 
     @include breakpoint(md){
       display: block;
-      padding: .5em 2em; 
+      padding: .5em 2em;
       border: 3px solid $nav-contact-color;
       color: $nav-contact-text-color;
       font-family:$primary-font;
       font-size: 20px;
       &:hover {
-        
+
         font-weight: bold;
         background: $hover-color;
         border-color: $hover-color;
@@ -203,5 +205,5 @@ margin-left: 25px;
         color: $active-color;
       }
 
-    }      
+    }
 }

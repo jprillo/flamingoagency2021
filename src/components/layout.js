@@ -32,15 +32,15 @@ const Layout = (props) => {
         style={{ paddingBottom: "10px", paddingTop: 0 }}
       >
         <div className="col-6">
-          <h5>Formal Flamingo</h5>
+          <h5>Formal Flamingo Digital Marketing</h5>
           <p>
-            A web design agency in Melbourne Florida specializing in helping
-            your business dominate the web.
+            A digital marketing agency in Palm Bay Florida specializing in helping
+            your business gain an edge online.
           </p>
         </div>
 
         <div className="col-6 social-media align-center">
-          <h5 className="align-center">Follow Me</h5>
+     
           <div>
             <a href="https://twitter.com/flamingodigital">
               <img alt="pink and white twitter icon" src={twitter}></img>

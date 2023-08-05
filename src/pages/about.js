@@ -9,64 +9,35 @@ import Seo from "../components/seo"
 
 
 
-const AboutPage = () => {    
+const AboutPage = () => {
     return(
-  
+
         <div>
            <Layout>
            <Seo title="Our Mission"
-           description="At our digital marketing agency, we specialize in developing exceptional websites for entrepreneurs and bloggers. Our team of experts is dedicated to creating tailored solutions that not only meet your needs but also exceed your expectations. Whether you need a brand-new website or want to revamp your existing one, we have the skills and expertise to help you achieve your online goals. Let us help you create an impressive online presence that drives traffic and boosts your bottom line. "
+           description="At Formal Flamingo, a digital marketing agency, we are committed to crafting top-notch websites. Our proficient team is devoted to designing customized solutions that not only fulfill your requirements but go beyond your aspirations."
           />
             <div className='hero-page'>
   <div className="flex gap-2" style={{alignItems: "center"}}>
-    <div className="col-6" >    
-      <h1>Our Mission</h1>     
-      <h2 style={{paddingRight: "5rem"}}>At our digital marketing agency, we specialize in developing exceptional websites for entrepreneurs and bloggers. Our team of experts is dedicated to creating tailored solutions that not only meet your needs but also exceed your expectations.</h2> 
+    <div className="col-7" >
+      <h1>Our Mission</h1>
+      <p style={{paddingRight: "5rem"}}>At Formal Flamingo Digital Marketing, we believe in the transformative power of digital presence. Our mission is to empower businesses of all sizes to thrive in the online world by crafting unique, engaging, and responsive websites that resonate with their brand identity. Leveraging cutting-edge technology and creative design, we strive to provide tailored solutions that not only enhance visibility but also foster growth and innovation.</p>
+
+      <p style={{paddingRight: "5rem"}}>We are committed to excellence, collaboration, and sustainability, working closely with our clients to understand their needs and vision. Our team of dedicated professionals is passionate about connecting businesses with their audiences through strategic digital marketing and compelling web experiences.</p>
+
+      <p style={{paddingRight: "5rem"}}>Your success is our success, and we are dedicated to guiding you every step of the way, from concept to completion. Join us on this exciting journey, and let's build something extraordinary together."</p>
       <div  style={{marginTop: "3.5rem"}}>
-      <a className="primary-button" href="/contact/">Contact Us</a>
+
       </div>
     </div>
-    <div className="col-6 hero-image">
-   
-    <StaticImage  src="../images/agency.png" alt="Jason Prillo is the owner of Formal Flamingo"/>
+    <div className="col-5 hero-image">
+
+    <StaticImage  src="../images/flamingo-agency.png" alt="Formal Flamingo is a web devlopment agency"/>
     </div>
-  </div>  
+  </div>
   </div>
 
 
-  <section className="light-back2">
-      <h3>Meet Our Team.</h3>
-      <div className="flex add-pad" >
-      
-        <div className="col-6 align-center ">
-        <StaticImage  src="../images/jason.png" alt="Jason Prillo is the owner of Formal Flamingo"/>
-          </div>
-          <div className="col-6">
-        <h5>Jason Prillo</h5>
-        <h2>Developer</h2>
-        <p>Jason started Formal Flamingo in 2016. He specializes in using Javascript, CSS, and HTML to make website come alive.
-        
-         Jason likes Gardening and Table Tennis. </p>
-           
-        </div>
-      </div>
-
-      <div className="flex reverse add-pad">
-
-      <div className="col-6">
-      <h5>Sara Perno</h5>
-      <h2>Designer</h2>
-      <p>Sara is a web designer from Palm Bay, Florida.
-     Sara likes Cats and Butterflies</p>
-      </div>
-   
-      
-      <div className="col-6 align-center about-pad">
-      <StaticImage  src="../images/sara.png" alt="Sara Perno is a designer for Formal Flamingo."/>
-        </div>
-   
-        </div>
-  </section>
 
   <div className="light-back1 banner">
     <h3>Our goal is to deliver the fastest, highest performing websites available to businesses looking for an edge online. </h3>
@@ -76,10 +47,10 @@ const AboutPage = () => {
       <Link className="primary-button" to="/contact/">Let's Talk</Link>
       </div>
   </div>
- 
 
 
-            </Layout>  
+
+            </Layout>
         </div>
     )
 }

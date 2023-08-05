@@ -13,7 +13,7 @@ description: Technical SEO is the process of optimizing your website so that
 tags:
   - SEO
 ---
-![seo](../../../static/img/nft.png)
+
 
 As technology continues to evolve and more businesses move online, technical SEO will become increasingly important in 2023. Technical SEO is the process of optimizing your website so that search engines can better understand and index it, thus giving your website better visibility in search results.
 
