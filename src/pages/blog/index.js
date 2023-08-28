@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from '../../components/layout'
 import { graphql} from "gatsby"
-import { Helmet } from 'react-helmet'
+import  Seo from '../../components/seo'
 
 import BlogArticle from '../../components/blogArticleOne'
 import TagBar from '../../components/tagBar'
@@ -21,11 +21,8 @@ export default function Blog({data}) {
 
 
   return <div >
-      <Helmet>
-        <title>Palm Bay Web Design</title>
-        <meta name="description" content="Formal Flamingo is a web development web design and digital marketing agency in Palm Bay Florida​" />
-        <meta name="theme-color" content="black" />
-      </Helmet>
+        <Seo title="Formal Flamingo - Web Design & Development in Palm Bay, Florida
+" />
 
 <div style={{background: "white"}}>
 <Layout color="ddd" >

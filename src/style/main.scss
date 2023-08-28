@@ -458,6 +458,7 @@ justify-content: center;
 
 label{
   font-family: $primary-font;
+
 }
 
 .social-media {
@@ -509,12 +510,12 @@ form{
   }
 }
 .field{
-  margin: 1em 0;
+  margin:  0;
   text-align: left;
 
   @include breakpoint(md){
 
-  margin: 1.5em 5em;
+  margin: 2em 0 0;
 }
 }
 .blog-wrap{
@@ -636,6 +637,14 @@ align-items: center
 
 .gap-1{
   gap: 7vw;
+}
+.gap-4{
+  gap: 0;
+  @include breakpoint(md){
+   gap: 50px;
+}
+
+
 }
 
 /* width */
@@ -793,3 +802,6 @@ margin: 5rem;
 }
 
 
+.control{
+  margin: .5rem 0 0 0 ;
+}

@@ -3,6 +3,8 @@ import { navigate } from 'gatsby-link';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 import '../style/main.scss';
+import beach from "../images/beach.png"
+
 
 function encode(data) {
   return Object.keys(data)
@@ -36,82 +38,108 @@ const Index = () => {
     <Layout>
       <Seo
         title="Contact Us"
-        description="Are you ready to start making the most out of your online business. Let's talk about your new website. Palm Bay FL."
+        description="We would love to hear from you!"
       />
 
-      <div>
-        <div style={{ textAlign: 'center', paddingTop: "50px" }} className="banner">
-          <h4>Nice to meet you. Let's talk.</h4>
+      <div className='flex gap-2 h-pad' style={{paddingTop: "50px", paddingBottom: "50px" }}>
+        <div className='col-6'>
+          <h1>Contact Us</h1>
+          <p style={{padding: "0 0 2rem 0"}}>We would love to hear from you!</p>
           <form
-            name="contact"
-            method="post"
-            action="/thanks/"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            onSubmit={handleSubmit}
-          >
-            {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-            <input type="hidden" name="form-name" value="contact" />
-            <div hidden>
-              <label>
-                Don’t fill this out:{' '}
-                <input name="bot-field" onChange={handleChange} />
-              </label>
-            </div>
-            <div className="field">
-              <label className="label" htmlFor={'name'}>
-                Name
-              </label>
-              <div className="control">
-                <input
-                  className="contact-input"
-                  type={'text'}
-                  name={'name'}
-                  onChange={handleChange}
-                  id={'name'}
-                  required={true}
-                />
-              </div>
-            </div>
-            <div className="field">
-              <label className="label" htmlFor={'email'}>
-                Email
-              </label>
-              <div className="control">
-                <input
-                  className="contact-input"
-                  type={'email'}
-                  name={'email'}
-                  onChange={handleChange}
-                  id={'email'}
-                  required={true}
-                />
-              </div>
-            </div>
-            <div className="field">
-              <label className="label" htmlFor={'message'}>
-                Message
-              </label>
-              <div className="control">
-                <textarea
-                  className="contact-input"
-                  name={'message'}
-                  onChange={handleChange}
-                  id={'message'}
-                  required={true}
-                />
-              </div>
-            </div>
-            <div>
-              <button
-                className="primary-button"
-                style={{ margin: 0, textSize: '2em' }}
-                type="submit"
-              >
-                Send
-              </button>
-            </div>
-          </form>
+    name="contact"
+    method="post"
+    action="/thanks/"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    onSubmit={handleSubmit}
+>
+    {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+    <input type="hidden" name="form-name" value="contact" />
+    <div hidden>
+        <label>
+            Don’t fill this out:{' '}
+            <input name="bot-field" onChange={handleChange} />
+        </label>
+    </div>
+    <div className='flex gap-4 '>
+    <div className="field col-6">
+        <label className="label" htmlFor={'firstName'}>
+        First Name
+
+        </label>
+        <div className="control">
+            <input
+            style={{width: "100%"}}
+                className="contact-input"
+                type={'text'}
+                name={'firstName'}
+                onChange={handleChange}
+                id={'firstName'}
+                required={true}
+            />
+        </div>
+    </div>
+    <div className="field col-6">
+        <label className="label" htmlFor={'lastName'}>
+            Last Name
+        </label>
+        <div className="control">
+            <input
+              style={{width: "100%"}}
+                className="contact-input"
+                type={'text'}
+                name={'lastName'}
+                onChange={handleChange}
+                id={'lastName'}
+                required={true}
+            />
+        </div>
+    </div>
+    </div>
+    <div className="field">
+        <label className="label" htmlFor={'email'}>
+            Email
+        </label>
+        <div className="control">
+            <input style={{width: "100%"}}
+                className="contact-input"
+                type={'email'}
+                name={'email'}
+                onChange={handleChange}
+                id={'email'}
+                required={true}
+            />
+        </div>
+    </div>
+    <div className="field">
+        <label className="label" htmlFor={'message'}>
+            Message
+        </label>
+        <div className="control">
+            <textarea
+                    input style={{width: "100%"}}
+                className="contact-input "
+                name={'message'}
+                onChange={handleChange}
+                id={'message'}
+                required={true}
+            />
+        </div>
+    </div>
+    <div>
+        <button
+            className="primary-button"
+            style={{ margin: "1rem 0 0 0", textSize: '2em', width: "100%"}}
+            type="submit"
+        >
+            Send
+        </button>
+    </div>
+</form>
+
+        </div>
+        <div className='col-6'>
+          <img src={beach} width="100%" height="100%" />
         </div>
       </div>
     </Layout>
