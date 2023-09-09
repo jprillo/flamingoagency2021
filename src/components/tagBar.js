@@ -19,7 +19,7 @@ export default function TagBar() {
 
 
   return (
-    <div className='tag-bar wrap' style={{display: "flex"}}>
+    <div className='tag-bar wrap flex' >
         <Link active="active" to="/blog"   style={{ color: "black",  backgroundColor: tagColors[0]}}className='all'>All</Link>
         <Link to= "../../tags/SEO"   style={{ color: "black",  backgroundColor: tagColors[1] }}className='t1'>SEO</Link>
         <Link to= "../../tags/design"   style={{ color: "black",  backgroundColor: tagColors[2] }}className='t2'>Design</Link>

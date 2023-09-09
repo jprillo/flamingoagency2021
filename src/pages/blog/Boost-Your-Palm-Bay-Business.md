@@ -5,11 +5,11 @@ date: 2023-03-17T15:04:10.000Z
 author: Jason Prillo
 authorImage: ../../../static/img/nft.png
 description: A business's website often serves as the first point of contact for potential customers. It's the digital storefront, the online business card, and the 24/7 customer service representative all rolled into one. For businesses in Palm Bay, Florida, a professionally designed website isn't just a nice-to-have; it's a necessity.
-featuredImage: ../../../static/img//nft.png
+featuredImage: ../../../static/img//palm-bay.png
 
 color1: "#008000"
 tags:
-  - Design
+  - Business
 ---
 
 
